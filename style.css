@@ -3,7 +3,7 @@ body{
     margin :0;
     background-color: #210002;
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 20px;
 }
 header {
     background-color: #210002;
@@ -17,7 +17,7 @@ header {
 }
 
 header .logo {
-    width: 30px;
+    width: 50px;
     height: auto;
     position: absolute;
     left: 50%;
@@ -40,10 +40,11 @@ header nav:last-child {
 
 header nav a {
     color: #fff;
-    margin: 0 80%;
-    text-decoration: none;
-    font-family: Poppins;
+    margin: 5px 40%;
+    text-decoration: solid;
+    font-family: 'Pacifico';
     font-weight: 500;
+
 }
 
 header nav a:hover {
@@ -59,10 +60,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.banner{
+.banner {
     height: 110vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .banner .bg{
     position: absolute;
@@ -102,10 +107,10 @@ footer {
 .banner .bg-9{
     background-image: url('img/.png');
 }
-.banner  h1{
+.banner h1 {
     position: absolute;
-    top: -25vh;
-    padding-top:20vh;
+    top: 0; /* Centering the title */
+    padding-top: -20vh;
     left: 0;
     width: 100%;
     text-align: center;
@@ -172,19 +177,21 @@ footer {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px; /* Add some space between the videos */
+    gap: 20px; /* Add some space between the videos */
     text-align: center;
     color: #fff;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:100px;
+    margin-right:100px;
 }
 
 .library iframe {
     width: 100%; /* Make the video take the full width of its container */
     height: auto; /* Maintain aspect ratio */
-    max-width: 560px;
     aspect-ratio: 16 / 9; /* Ensure the videos keep their 16:9 aspect ratio */
+    display: block; /* Ensure they are block elements */
+    margin: 0 auto; /* Center the iframes */
 }
+
 
 .about {
     padding: 50px;
@@ -203,15 +210,66 @@ footer {
     max-width: 800px;
     margin: 0 auto;
 }
-@media screen and (max-width: 768px){
-    .banner h1{
-        font-size: 2rem;
-        top: -5vh;
+.links-container {
+    margin-top: 20px; /* Add some spacing from the title */
+    display: flex;
+    flex-direction:column;
+    gap: 20px; /* Space between the buttons */
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    z-index:10 ;
+}
+
+.banner-link button {
+    background-color: rgba(30, 31, 33, 0.44);
+    padding: 10px 50px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.83);
+    transition: background-color 0.3s ease;
+}
+
+.banner-link button:hover {
+
+    box-shadow: 0 0 10px #ff0000;
+}
+
+
+    @media screen and (max-width: 768px) {
+        .banner h1 {
+            font-size: 3rem;
+            top: 3vh;
+        }
+
+        .library {
+            grid-template-columns: 1fr; /* Stack videos vertically */
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .library iframe {
+            width: 100%; /* Adjust width to full */
+        }
+        header nav a {
+            color: #fff;
+            margin: 5px 20%;
+            text-decoration: solid;
+            font-family: 'Pacifico';
+            font-weight: 500;
+
+        }
     }
-    .library{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .library img{
-        height: 300px;
+@media screen and (min-width: 1024px) {
+    .animation-show {
+        transform: translateY(0);
+        opacity: 1;
+        transition: none; /* No transition for instant visibility */
     }
 }
+
