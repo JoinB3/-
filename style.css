@@ -81,31 +81,31 @@ footer {
     transition: 0.1s;
 }
 .banner .bg-1{
-    background-image: url('img/0.png');
+    background-image: url('img/0.webp');
 }
 .banner .bg-2{
-    background-image: url('img/1.png');
+    background-image: url('img/1.webp');
 }
 .banner .bg-3{
-    background-image: url('img/2.png');
+    background-image: url('img/2.webp');
 }
 .banner .bg-4{
-    background-image: url('img/3.png');
+    background-image: url('img/3.webp');
 }
 .banner .bg-5{
-    background-image: url('img/4.png');
+    background-image: url('img/4.webp');
 }
 .banner .bg-6{
-    background-image: url('img/.png');
+    background-image: url('img/.webp');
 }
 .banner .bg-7{
-    background-image: url('img/6.png');
+    background-image: url('img/6.webp');
 }
 .banner .bg-8{
-    background-image: url('img/7.png');
+    background-image: url('img/7.webp');
 }
 .banner .bg-9{
-    background-image: url('img/.png');
+    background-image: url('img/.webp');
 }
 .banner h1 {
     position: absolute;
@@ -191,7 +191,6 @@ footer {
     display: block; /* Ensure they are block elements */
     margin: 0 auto; /* Center the iframes */
 }
-
 
 .about {
     padding: 50px;
