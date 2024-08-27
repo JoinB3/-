@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+
 body{
     margin :0;
     background-color: #210002;
-    font-family: Poppins;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 800;
     font-size: 20px;
 }
 header {
@@ -42,8 +45,8 @@ header nav a {
     color: #fff;
     margin: 5px 40%;
     text-decoration: solid;
-    font-family: 'Pacifico';
-    font-weight: 500;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 800;
 
 }
 
@@ -114,8 +117,9 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    font-size: 5rem;
-    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 800;
     color: #fff;
 }
 .intro{
@@ -225,12 +229,12 @@ footer {
     padding: 10px 50px;
     border: 1px solid #ffffff;
     border-radius: 5px;
-    color: #fff;
-    font-family: Poppins;
-    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 800;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.83);
+
     transition: background-color 0.3s ease;
 }
 
@@ -259,8 +263,6 @@ footer {
             color: #fff;
             margin: 5px 20%;
             text-decoration: solid;
-            font-family: 'Pacifico';
-            font-weight: 500;
 
         }
     }
