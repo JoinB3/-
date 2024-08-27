@@ -245,9 +245,15 @@ footer {
 
 
     @media screen and (max-width: 768px) {
+
+        .body {
+            font-weight: 1500;
+        }
+
         .banner h1 {
             font-size: 3rem;
             top: 3vh;
+            font-weight:1500;
         }
 
         .library {
@@ -263,7 +269,11 @@ footer {
             color: #fff;
             margin: 5px 20%;
             text-decoration: solid;
+            font-weight:1500;
 
+        }
+        .banner-link button {
+            font-weight: 1500;
         }
     }
 @media screen and (min-width: 1024px) {
