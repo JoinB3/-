@@ -270,13 +270,16 @@ footer {
     @media screen and (max-width: 768px) {
 
         .body {
-            font-weight: 900;
+            font-weight: bold;
+        }
+        .about p{
+            font-weight: bold;
         }
 
         .banner h1 {
             font-size: 3rem;
             top: 3vh;
-            font-weight:900;
+            font-weight:bold;
         }
 
         .library {
@@ -291,12 +294,12 @@ footer {
         header nav a {
             color: #fff;
             margin: 5px 20%;
-            text-decoration: solid;
-            font-weight:900;
+            text-decoration: none;
+            font-weight:bold;
 
         }
         .banner-link button {
-            font-weight: 900;
+            font-weight: bold;
         }
     }
 @media screen and (min-width: 1024px) {
